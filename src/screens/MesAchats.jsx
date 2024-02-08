@@ -46,8 +46,8 @@ const MesAchats = () => {
           <View style={Styles.line}></View>
           {totalAchat.map((item,index)=>{
             return (
-          <View>
-            <View style={Styles.achats} key={index} >
+          <View key={index}>
+            <View style={Styles.achats}  >
             {item.names.map((name, idx) => (
       <View key={idx} style={Styles.infoAchats}>
         <Text style={Styles.coursName}>{name}</Text>
