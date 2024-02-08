@@ -54,7 +54,7 @@ const MesAchats = () => {
         <Text style={Styles.priceAchat}>{item.prices[idx]} $</Text>
       </View>
     ))}
-              <View style={Styles.lineSmall}></View>
+  <View style={Styles.lineSmall} key={`line_${index}`}></View>
 
             </View>
           </View>
@@ -79,6 +79,7 @@ const Styles = {
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     paddingVertical: 20,
+    paddingHorizontal: 20,
     paddingBottom: 40,
     flexDirection: "column",
 
@@ -100,11 +101,7 @@ const Styles = {
     borderBottomWidth: 2,
     marginTop: 30,
   },
-  achats: {
-    // flexDirection: "row",
-    // justifyContent: "space-between",
-    // padding: 10,
-  },
+
     priceAchat: {
         color: "gray",
         fontSize: 15,
@@ -119,6 +116,7 @@ const Styles = {
         flexDirection: "row",
         justifyContent: "space-between",
         marginTop: 10,
+
 
     },
     lineSmall: {
