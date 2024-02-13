@@ -1,55 +1,41 @@
-# Mobile Commerce Platform
+# Shop Ease
 
-## Project Overview
+## Description
 
-This project aims to develop a mobile application that enables users to browse, purchase, and manage courses from a specialized e-commerce platform.
+    Shop Ease is a mobile application that allows users to search for courses
+    and buy them. The application is built using React Native, Expo and Redux Toolkit.
 
-### Features to Implement:
+## Features
 
-1. **Course Display:** Dynamically display the list of available courses. Show an appropriate message if no courses are available.
+-   View courses
+-   Add courses to cart
+-   Remove courses from cart
+-   View course details
+-   Buy courses
+-   View purchased courses
 
-2. **Navigation and Interaction:** Integrate interactive icons such as "More Details" and "Add to Cart" to enhance navigation.
+## Technologies
 
-3. **Screen Management:** Create two new distinct screens, namely "CourseInfos" and "Cart". Implement a stack navigator to ensure smooth transitions between the "Landing" and "CourseInfos" screens.
+-   [React Native](https://reactnative.dev/)
+-   [Expo](https://expo.io/)
+-   [Redux Toolkit](https://redux-toolkit.js.org/)
+-   [React Navigation](https://reactnavigation.org/)
 
-4. **CourseInfos Customization:** Display the course name in the header of the "CourseInfos" screen. Integrate an icon on the right side for quick navigation to the cart.
+## Installation
 
-5. **Cart Manipulation:** Allow adding courses to the cart. Remove added courses from the catalog. Display saved courses in the cart. Enable course removal from the cart. Re-display courses in the catalog that are removed from the cart.
+### Prerequisites
 
-6. **Purchase Process:** Finalize the purchase of items in the cart. Empty the cart after each successful purchase.
+-   [Node.js](https://nodejs.org/en/)
 
-7. **Global Navigation:** Implement a Drawer Navigator comprising three main tabs: "Catalog", "Cart", and "Purchases".
+### Steps
 
-### Redux Implementation:
+-   Ensure you have Node.js installed
+-   Clone the repository
+-   Run `npm install` to install dependencies
+-   Run `npm start` to start the application
 
-You are required to use Redux for the following reducers: `reducerCourses` for course management, `reducerCart` for cart management, `reducerPayment` for payment management.
+### Dockerization
 
-### Code Coverage and Dockerization:
-
-Increase code coverage by 20% while dockerizing the application.
-
-## Getting Started
-
-Follow these instructions to get the project up and running on your local machine.
-
-1. Clone the repository:
-`git clone https://github.com/your/repository.git`
-
-2. Navigate to the project directory:
-`cd project-directory`
-
-3. Install dependencies:
-`npm install`
-
-4. Start the development server:
-`npm start`
-
-
-## Contributing
-
-Contributions are welcome! Please read the [contribution guidelines](CONTRIBUTING.md) before making any pull requests.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
+-   Ensure you have [Docker](https://www.docker.com/) installed
+-   run `docker build -t shopease .` to build the docker image
+-   run ` docker run -it -p 19000:19000 -p 19001:19001 -p 19002:19002 -p 8081:8081 shopease` to run the docker container
